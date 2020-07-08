@@ -20,4 +20,10 @@ public class RentableCar extends Car implements Rentable{
         else return false;
     }
 
+    @Override
+    public String toString() {
+        return "RentableCar{" +
+                "renter=" + renter +
+                '}';
+    }
 }

@@ -12,8 +12,16 @@ public class Main {
             System.out.println(v);
         }
 
-        Vehicle vehicle3 = new RentableCar("Fiat",1975,4);
-        vehicle3.rent();
+        RentableCar vehicle3 = new RentableCar("Fiat",1975,4);
+        vehicle3.rent("Marian","Kowalski","420");
+
+        System.out.println(vehicle3);
+
+        System.out.println(vehicle3.isRent());
+
+        vehicle3.handOver();
+
+        System.out.println(vehicle3.isRent());
 
     }
 }
